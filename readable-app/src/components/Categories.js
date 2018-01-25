@@ -36,10 +36,4 @@ function mapStateToProps(state) {
     };
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        fetchCategories: () => dispatch(fetchCategories())
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Categories);
+export default connect(mapStateToProps, {fetchCategories})(Categories);

@@ -24,6 +24,10 @@ const styles = {
     },
     clear: {
         clear: 'both'
+    },
+    notfound: {
+        margin: '20px',
+        padding: '20px'
     }
 };
 
@@ -132,7 +136,7 @@ class PostDetail extends Component {
                 </div>
             );
         } else {
-            return <div></div>
+            return <div style={styles.notfound}><p>404 - Page Not Found</p><p>This Post is no longer available.</p></div>
         }
     }
 }
