@@ -30,7 +30,7 @@ class App extends Component {
     };
 
     componentWillMount() {
-        this.props.getPosts();
+        this.props.fetchPosts();
     }
 
     render() {
@@ -76,10 +76,4 @@ function mapStateToProps(state) {
     }
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        getPosts: () => dispatch(fetchPosts())
-    }
-}
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(connect(mapStateToProps, {fetchPosts})(App));
