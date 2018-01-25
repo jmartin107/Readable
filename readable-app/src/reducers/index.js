@@ -13,16 +13,14 @@ import {
     POST_IS_DETAIL,
     POST_ADD_FORM,
     SORT_COMMENT,
-    SET_POST_TITLE
-} from '../actions'
-
-import {
+    SET_POST_TITLE,
     FETCH_COMMENTS,
     ADD_COMMENT,
     DELETE_COMMENT,
     VOTE_COMMENT,
     EDIT_COMMENT
-} from '../actions/comments'
+} from '../actions/types'
+
 
 const initialPostState = {
     posts: {},

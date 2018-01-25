@@ -1,11 +1,11 @@
 import * as PostsApi from "../PostsApi";
 import GUID from 'guid';
+import { FETCH_COMMENTS,
+         ADD_COMMENT,
+         DELETE_COMMENT,
+         VOTE_COMMENT,
+         EDIT_COMMENT } from './types';
 
-export const FETCH_COMMENTS = 'FETCH_COMMENTS';
-export const ADD_COMMENT = 'ADD_COMMENT';
-export const DELETE_COMMENT = 'DELETE_COMMENT';
-export const VOTE_COMMENT = 'VOTE_COMMENT';
-export const EDIT_COMMENT = 'EDIT_COMMENT';
 
 export const doFetchComments = comments => ({
     type: FETCH_COMMENTS,

@@ -1,18 +1,20 @@
 import * as PostsApi from '../PostsApi.js';
 
-export const ADD_POST = 'ADD_POST';
-export const REMOVE_POST = 'REMOVE_POST';
-export const GET_ALL_POSTS = 'GET_ALL_POSTS';
-export const VOTE_POST = 'VOTE_POST';
-export const GET_POST = 'GET_POST';
-export const EDIT_POST = 'EDIT_POST';
-export const GET_CATEGORIES = 'GET_CATEGORIES';
-export const SORT_POST = 'SORT_POST';
-export const POST_ADD_RESET = 'POST_ADD_RESET';
-export const POST_ADD_FORM = 'POST_ADD_FORM';
-export const POST_IS_DETAIL = 'POST_IS_DETAIL';
-export const SORT_COMMENT = 'SORT_COMMENT';
-export const SET_POST_TITLE = 'SET_POST_TITLE';
+import {
+    ADD_POST,
+    REMOVE_POST,
+    GET_ALL_POSTS,
+    VOTE_POST,
+    GET_POST,
+    EDIT_POST,
+    GET_CATEGORIES,
+    SORT_POST,
+    POST_ADD_FORM,
+    POST_IS_DETAIL,
+    SORT_COMMENT,
+    SET_POST_TITLE
+} from './types'
+
 
 export function addPost(post, success) {
     return {

@@ -1,0 +1,19 @@
+export const ADD_POST = 'ADD_POST';
+export const REMOVE_POST = 'REMOVE_POST';
+export const GET_ALL_POSTS = 'GET_ALL_POSTS';
+export const VOTE_POST = 'VOTE_POST';
+export const GET_POST = 'GET_POST';
+export const EDIT_POST = 'EDIT_POST';
+export const GET_CATEGORIES = 'GET_CATEGORIES';
+export const SORT_POST = 'SORT_POST';
+export const POST_ADD_RESET = 'POST_ADD_RESET';
+export const POST_ADD_FORM = 'POST_ADD_FORM';
+export const POST_IS_DETAIL = 'POST_IS_DETAIL';
+export const SORT_COMMENT = 'SORT_COMMENT';
+export const SET_POST_TITLE = 'SET_POST_TITLE';
+
+export const FETCH_COMMENTS = 'FETCH_COMMENTS';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+export const VOTE_COMMENT = 'VOTE_COMMENT';
+export const EDIT_COMMENT = 'EDIT_COMMENT';
