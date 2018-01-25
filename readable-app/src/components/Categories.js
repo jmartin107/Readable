@@ -9,22 +9,25 @@ class Categories extends Component {
         this.props.fetchCategories();
     }
 
+    renderCategories = () => {
+        return <div>
+            <div>Categories</div>
+            <ul className="category-list">
+                <li key="all"><Link to='/'>All</Link></li>
+                {this.props.categories.map((category) => (
+                    <li key={category.name}><Link to={`/${category.path}`}>{category.name}</Link></li>
+                ))}
+            </ul>
+        </div>
+    };
+
     render() {
         return (
-            <div>
-                <div className="sidebar">
-                    <div>Categories</div>
-                    <ul className="category-list">
-                    <li key="all"><Link to='/'>All</Link></li>
-                    {this.props.categories.map((category) => (
-                        <li key={category.name}><Link to={`/${category.path}`}>{category.name}</Link></li>
-                    ))}
-                    </ul>
-                </div>
+            <div className="sidebar">
+                {this.renderCategories()}
             </div>
         )
     }
-
 }
 
 function mapStateToProps(state) {
@@ -39,4 +42,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Categories)
+export default connect(mapStateToProps, mapDispatchToProps)(Categories);
